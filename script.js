@@ -40,7 +40,7 @@ function setOperator(newOperator) {
 }
 
 function calculate() {
-    if (operator === null || firstOperand ===null) return;
+    if (operator === null || firstOperand === null) return;
     let secondOperand = parseFloat(currentNumber.replace(",","."));
     let resultValue;
 
@@ -74,7 +74,7 @@ function calculate() {
 }
 
 function clearCalculator() {
-    currentNumber = null;
+    currentNumber = '';
     firstOperand = null;
     operator = null;
     updateResult(true);
